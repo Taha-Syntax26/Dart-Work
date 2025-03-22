@@ -31,4 +31,14 @@ void main(){
   //Boolean values
   bool isAlive = true;
   print("Am I alive? $isAlive");
+
+
+  stdout.write("Enter your age: ");
+  int driverAge = int.parse(stdin.readLineSync()!);
+
+  if (driverAge >= 18){
+    print("You are allowed to drive");
+  } else {
+    print("You are not allowed to drive");
+  }
 }
